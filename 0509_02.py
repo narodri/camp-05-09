@@ -1,12 +1,10 @@
-N = list(map(int, input().split()))
-test = N[0] #テストの回数
-student = N[1] #学生数
+test, student = map(int, input().split())
+point = [0] * student
 
 A = [[0 for _ in range(test)] for _ in range(student)]
-for i in range(student):
-    A[i] = list(map(int, input().split()))
+for x in range(student):   
+    A[x] = list(map(int, input().split()))
 
-point=[0 for _ in range(student)]
 max_temp=0
 
 for i in range(test):
